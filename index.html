@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Projekt na Plastyke 01.2025</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="intro-container">
+                <h1>Mój Projekt na Plastykę</h1>
+
+                <div class="controls">
+                    <label for="imageUpload">Wybierz plik</label>
+                    <input type="file" accept="image/*" id="imageUpload" />
+                    <p>lub poprostu...</p>
+                    <!-- <button id="generate">Generate Shapes</button>
+                    <button id="addDetail">Add More Detail</button> -->
+                </div>
+
+                <button id="begin">Zacznij malować</button>
+            </div>
+
+            <!-- <div class="image-container"> -->
+            <canvas id="originalCanvas"></canvas>
+
+            <div class="shapeCanvasContainer">
+                <canvas id="shapeCanvas"></canvas>
+            </div>
+
+            <div class="background"></div>
+
+            <!-- </div> -->
+
+            <audio id="backgroundMusic" loop>
+                <source src="assets/air-on-the-g-string.mp3" type="audio/mp3" />
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <script src="assets/mona-lisa.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
